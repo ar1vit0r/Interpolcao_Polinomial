@@ -15,7 +15,7 @@ pontosMax = int(input("Insira o numero total de pontos: "))
 for i in range(pontosMax):
     abcissa.append(float(input("Insira a abcissa do ponto: " + str(i+1) + ".\n")))
     ordenada.append(float(input("Insira a ordenada do ponto: " + str(i+1) + ".\n")))
-for i in range(1,pontosMax): #InsertionSort para sempre ordenar xD
+for i in range(1,pontosMax): #InsertionSort para ordenar 
     for j in range(i):
         if(abcissa[i] < abcissa[j]):
             swap(abcissa[i] , abcissa[j])
@@ -55,7 +55,7 @@ for i in range(1,m+1):
     im1 = i - 1
     t = e[im1] / d[im1]
     d.insert(i, d[i-1] - (t * e[im1]) )
-    s2[ip1] = (s2[ip1] - (t * s2[i-1]))  #arrumo um, aparece 10
+    s2[ip1] = (s2[ip1] - (t * s2[i-1]))
 #solução por substituições retroativas
 s2[m] = (s2[m] / d[m-1]) # Problema
 for i in range( m-1, 1, -1):
